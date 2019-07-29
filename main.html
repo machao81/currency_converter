@@ -1,0 +1,41 @@
+<html>
+<header>
+    <title>Oclock</title>
+	<link rel="icon" type="image/png" href="logo.png" />
+
+
+
+    <link href="main.css" rel="stylesheet" type="text/css">   
+    <script type="text/javascript" src="main.js"></script>
+
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Materialize Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Materialize Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</header>
+
+<body onload="onLoad()">
+    <div class="container primary-color">
+        
+        <div id="titleDiv" class="secondary-color" >Currency Converter by Thibault MORETTE for O'Clock</div>
+
+
+        <div id="inputDiv">
+            <label for="amount_input" class="secondary-color">Montant en euros</label>
+            <input id="amount_input" type="number" value="10" class="colors"  class="validate" oninput="onAmountChange()">
+            <label  for="currency_select" class="secondary-color">Devise</label>
+            <select id="currency_select" class="colors" onchange="onCurrencyChange()"></select>
+        </div>
+
+        <div id="convertDiv">
+            <a class="btn btn-large colors"><i class="material-icons">trending_flat</i></a>
+        </div>
+
+        <div id="resultDiv" class="colors">?</div>
+    </h3>
+</body>
+</html>

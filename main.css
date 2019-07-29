@@ -1,0 +1,68 @@
+
+:root {
+    --oclock-primary-color: #0ac3a7;
+    --oclock-secondary-color: #fffdd8;
+}
+.primary-color {
+   
+    background: var(--oclock-primary-color);
+}
+.secondary-color {
+    font-size: 1.5em !important;
+    font-weight: bold;
+    color: var(--oclock-secondary-color) !important;
+}
+
+.body{
+    height: 100%;
+    width: 100%;
+}
+.container {
+    height: 100%;
+    width: 100% !important;
+    display: grid;
+	grid-template-columns: 10% 1fr 1fr 1fr 10%;
+	grid-template-rows: auto 100px 200px auto;
+    grid-template-areas:    ". . . . . "
+                            ". titleDiv titleDiv titleDiv ."
+                            ". inputDiv convertDiv resultDiv ."
+                            ". . . . . ";
+    justify-items:  center;
+}
+#titleDiv {
+    grid-area:titleDiv;
+    font-size: 2.3em !important;
+}
+#inputDiv {
+    grid-area: inputDiv;
+    margin: auto !important;
+}
+
+#convertDiv {
+    grid-area: convertDiv;
+    margin: auto !important;
+}
+#resultDiv {
+    grid-area: resultDiv;
+    height: 54px;
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+    margin: auto;
+    place-self: center stretch;
+}
+
+.btn i {
+    font-size: 3em !important;
+}
+#amount_input, .select-dropdown{
+    padding-left:10% !important;
+    color: var(--oclock-primary-color) !important; 
+    background: var(--oclock-secondary-color) !important; 
+    font-weight: bold;
+}
+.colors {
+    color: var(--oclock-primary-color) !important;
+    background: var(--oclock-secondary-color) !important;
+    font-weight: bold;
+}
